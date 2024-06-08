@@ -2,7 +2,7 @@ import 'package:cobacoba/pages/home.dart';
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: 'Gojek UI',
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
